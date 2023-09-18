@@ -17,6 +17,10 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -44,4 +48,14 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    //OSM
+    implementation ("org.osmdroid:osmdroid-android:6.1.10")
+    implementation ("org.osmdroid:osmdroid-mapsforge:6.1.10")
+    implementation ("androidx.preference:preference:1.2.1")
+
+    //graphhopper
+    implementation ("com.graphhopper:graphhopper-android:2.0.2")
+
+
 }
