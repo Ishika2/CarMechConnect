@@ -54,8 +54,5 @@ dependencies {
     implementation ("org.osmdroid:osmdroid-mapsforge:6.1.10")
     implementation ("androidx.preference:preference:1.2.1")
 
-    //graphhopper
-    implementation ("com.graphhopper:graphhopper-android:2.0.2")
-
 
 }
