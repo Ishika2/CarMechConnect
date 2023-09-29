@@ -54,5 +54,7 @@ dependencies {
     implementation ("org.osmdroid:osmdroid-mapsforge:6.1.10")
     implementation ("androidx.preference:preference:1.2.1")
 
-
+    //Rive
+    implementation ("app.rive:rive-android:5.0.0")
+    implementation ("androidx.startup:startup-runtime:1.1.1")
 }
