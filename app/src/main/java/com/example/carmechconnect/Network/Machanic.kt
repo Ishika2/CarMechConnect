@@ -1,6 +1,7 @@
 package com.example.carmechconnect.Network
 
-import com.example.carmechconnect.LocationDetails.POI
+import com.example.carmechconnect.LocationDetails.pointOfIntrest
+import com.example.carmechconnect.LocationDetails.pointOfIntrestItem
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Response
@@ -14,7 +15,7 @@ val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
 // Define the complete URL in the annotation
 interface MechanicInterface {
     @GET("search?addressdetails=1&q=Car+mechanic&format=jsonv2&limit=10")
-    suspend fun getMechanic(): Response<POI>
+    suspend fun getMechanic(): Response<pointOfIntrest>
 }
 
 object MechanicService {
